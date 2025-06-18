@@ -1,0 +1,212 @@
+  @font-face {
+      font-family: "Figtree";
+      src: url(./Assets/fonts/Figtree-VariableFont_wght.ttf);
+  }
+
+  body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      backdrop-filter: blur(10px);
+  }
+
+  header {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+      color: white;
+  }
+
+  header,
+  footer {
+      background-color: black;
+      padding: 20px;
+      text-align: center;
+  }
+
+  h1 {
+      padding-left: 10px;
+  }
+
+  .typewritter {
+      width: 20ch;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      animation: typing 6s steps(28) infinite,
+          blink .5s step-end infinite alternate;
+  }
+
+  @keyframes typing {
+
+      0%,
+      100% {
+          width: 0;
+      }
+
+      50% {
+          width: 20ch;
+      }
+  }
+
+  @keyframes blink {
+      50% {
+          border-color: transparent
+      }
+  }
+
+  header nav ul,
+  footer nav ul {
+      list-style-type: none;
+      padding: 0;
+      padding-top: 20px;
+  }
+
+  header nav ul li,
+  footer nav ul li {
+      display: inline;
+      margin-right: 15px;
+  }
+
+  header nav ul li a,
+  footer nav ul li a {
+      color: white;
+      text-decoration: none;
+  }
+
+  header nav ul li a:hover {
+      color: #a1c4fd;
+  }
+
+  hr {
+      border: 1px solid white;
+      margin: 0;
+  }
+
+  main {
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-bottom: 20px;
+  }
+
+  main ul li a {
+      color: black;
+      text-decoration: none;
+      margin: 0;
+  }
+
+  .main-content ul li {
+      width: 160px;
+  }
+
+  main ul li a:hover {
+      color: white;
+  }
+
+  .write-up {
+      margin-top: 100px;
+  }
+
+  .write-up h2 a {
+      color: black;
+      /* text-decoration: none; */
+  }
+
+  .write-up h2 a:hover {
+      color: white;
+  }
+
+  footer {
+      padding-bottom: 50px;
+  }
+
+  form {
+      max-width: 600px;
+      margin: auto;
+      background-color: white;
+      margin-top: 90px;
+      padding: 20px;
+      border-radius: 5px;
+  }
+
+  .input-box {
+      position: relative;
+  }
+
+  .name-input {
+      width: 100%;
+      padding: 5px 0;
+      padding-top: 20px;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      outline: none;
+      background: transparent;
+      color: #fff;
+      font-size: 1.8em;
+  }
+
+  .name-label {
+      position: absolute;
+      left: 0;
+      padding: 10px 5px;
+      color: black;
+      font-size: 1.4rem;
+      pointer-events: none;
+      transition: 0.5s;
+  }
+
+  .name-input:focus~label,
+  .name-label:focus~label {
+      transform: translateY(-0.7rem);
+      color: rgb(162, 162, 198);
+      font-size: 0.75em;
+  }
+
+  form input,
+  form textarea {
+      width: 100%;
+      padding: 10px;
+      padding-left: 1px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+  }
+
+  form button {
+      padding: 10px 15px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+  }
+
+  form button:hover {
+      background-color: black;
+      color: green;
+  }
+
+  .copyrights {
+      color: white;
+      margin-top: 90px;
+  }
+
+  .copyrights a {
+      color: white;
+      text-decoration: none;
+  }
+
+  @media screen and (max-width: 390px) {
+
+      header,
+      footer {
+          padding: 20px;
+          display: block;
+          text-align: center;
+      }
+
+      header nav ul li a,
+      footer nav ul li a {
+          display: block;
+      }
+
+  }

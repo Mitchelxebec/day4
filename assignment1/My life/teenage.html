@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeenageHood</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header,
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: brown;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header nav ul li a:hover {
+            color: black;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        form label {
+            color: black;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            padding-left: 1px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+
+
+    <header>
+        <h1>My Growing Up (Ages 13 - 18)</h1>
+        <nav>
+            <ul>
+                <li><a href="./childhood.html">CHILDHOOD</a></li>
+                <li><a href="./future.html">FUTURE</a></li>
+                <li><a href="#Myform">CONTACT FORM</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>SCHOOL EXPERIENCES</h2>
+        <p>Starting school was tough because i did not meet anyone i knew.</p>
+        <p>My time in school was nice i learnt a lot and met and made new friends.</p>
+
+        <h2>HOBBIES</h2>
+        <p>My hobbies are:</p>
+        <ol>
+            <li>Reading</li>
+            <li>Traveling</li>
+            <li>Watching Anime</li>
+        </ol>
+
+        <h2>FRIENDSHIPS</h2>
+        <p>I have some few good friends like:</p>
+        <ol type="I">
+            <li>Reed</li> <img src="./Assets/avatar.jpg" alt="Reed">
+            <li>Travis</li> <img src="./Assets/image3.png" alt="Travis">
+            <li>Williams</li> <img src="./Assets/image-3.png" alt="Williams">
+        </ol>
+
+        <h2>CHALLENGES OVERCOMED</h2>
+        <p>Some challenges overcomed were:</p>
+        <ol type="A">
+            <li>Laziness</li>
+            <li>Procrastination</li>
+        </ol>
+    </main>
+
+    <footer>
+        <form id="Myform">
+            <label>My E-Mail</label>
+            <input type="email" placeholder="E-mail" required>
+            <br><br>
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Phone Number" required><br><br>
+            <label>Message</label><br>
+            <textarea placeholder="Please enter your message here..." cols="30" rows="10" required></textarea>
+            <br><br>
+            <button type="submit">Message Me</button>
+        </form>
+    </footer>
+</body>
+
+</html>
