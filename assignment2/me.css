@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header,
+footer {
+    background-color: #025e88;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul,
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li,
+footer nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a,
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #a1c4fd;
+}
+
+#about-me,
+#my-interest,
+#useful {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    margin-top: 25px;
+    padding: 20px;
+    box-shadow: 1px 1px 4px;
+    margin-bottom: 40px;
+}
+
+hr {
+    border-color: #5fc4f3;
+}
+
+img {
+    height: 90px;
+    width: 90px;
+    border: 2px solid #5fc4f3;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+#about-me h3,
+#my-interest h3,
+#my-interest h4 {
+    color: #022a3d;
+}
+
+#about-me p,
+#useful p {
+    font-size: 14px;
+}
+
+#my-interest ul li {
+    color: #022a3d;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#useful ul li {
+    margin-bottom: 10px;
+}
+
+#useful ul li a {
+    text-decoration: none;
+    color: #025e88;
+}
+
+footer p {
+    margin: auto;
+    margin-bottom: 15px;
+}
