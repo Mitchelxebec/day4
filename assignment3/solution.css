@@ -1,0 +1,565 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: white;
+}
+
+header,
+footer {
+    background-color: #000000;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+header img {
+    height: 40px;
+    width: 40px;
+}
+
+hr {
+    border: 1px solid rgb(109, 108, 108);
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #a1c4fd;
+    text-decoration: underline;
+}
+
+main {
+    margin: auto;
+    text-align: center;
+}
+
+.build,
+.build button {
+    font-size: 12px;
+}
+
+.build p {
+    display: inline;
+    margin-right: 10px;
+}
+
+.build button {
+    background-color: black;
+    color: white;
+    height: 35px;
+    width: 150px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.completed {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#services,
+#about {
+    padding: 0;
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+
+#services h2 {
+    padding-top: 30px;
+}
+
+.web-and-mobile {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 90px;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.web,
+.mobile {
+    border: 1px solid rgb(109, 108, 108);
+    text-align: start;
+    padding: 20px;
+}
+
+.web ul,
+.mobile ul {
+    list-style: circle;
+}
+
+.web ul li,
+.mobile ul li {
+    padding: 10px;
+}
+
+.charts img {
+    margin-right: 25px;
+    height: 200px;
+    width: 299px;
+}
+
+#about,
+#projects {
+    max-width: 900px;
+    margin: auto;
+}
+
+.goals {
+    margin-top: 50px;
+    display: flex;
+}
+
+.goal p {
+    max-width: 390px;
+}
+
+.certification {
+    margin: auto;
+    margin-top: 90px;
+    padding-bottom: 60px;
+}
+
+
+.certificates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 20px;
+}
+
+.certificates>div {
+    padding: 15px;
+    max-width: 450px;
+    border-radius: 3px;
+    background-color: rgb(0, 17, 65);
+    transition: transform 0.3s;
+}
+
+.certificates>div:hover {
+    transform: scale(1.03);
+}
+
+.certificates p {
+    color: gray;
+    font-size: 10px;
+}
+
+.certificates>div>button {
+    height: 35px;
+    width: 390px;
+    cursor: pointer;
+    border: 1px solid blue;
+    border-radius: 3px;
+    justify-content: center;
+    color: blue;
+    background: transparent;
+}
+
+.certification p {
+    color: gray;
+    font-size: 15px;
+}
+
+.web-dev-proj {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 20px;
+}
+
+.web-dev-proj>div {
+    padding: 15px;
+    max-width: 450px;
+    border-radius: 3px;
+    background-color: rgb(0, 17, 65);
+    transition: transform 0.3s;
+}
+
+.web-dev-proj>div:hover {
+    transform: scale(1.03);
+}
+
+.web-dev-proj>div>p {
+    text-align: start;
+}
+
+.web-dev-proj>div>img {
+    max-width: 100px;
+    margin-bottom: 1rem;
+    align-self: center;
+}
+
+.mobile-dev>div {
+    margin-left: 120px;
+}
+
+.card {
+    background-color: rgb(0, 17, 65);
+    border-radius: 3px;
+    padding: 10px;
+    max-width: 203px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.tech-stack {
+    font-size: 0.85rem;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.view-project {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+}
+
+.view-project:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.team,
+.story {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.team h2,
+.story h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.team p,
+.story p {
+    color: #cccccc;
+    margin-bottom: 40px;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-member-card {
+    background-color: transparent;
+    border-radius: 12px;
+    border: 1px solid rgb(56, 56, 56);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+}
+
+.team-member-card img {
+    width: 100%;
+    height: 250px;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.card-content .role {
+    font-weight: bold;
+    font-size: 14px;
+    color: #1e90ff;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.rating {
+    display: flex;
+    gap: 25px;
+}
+
+.rating-desc {
+    display: block;
+}
+
+.rating-desc p {
+    margin: auto;
+}
+
+#star {
+    color: yellow;
+}
+
+.owners {
+    display: flex;
+    gap: 15px;
+}
+
+.owners img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.owners-desc {
+    display: block;
+    margin-top: 10px;
+}
+
+.owners-desc p {
+    margin: auto;
+}
+
+.owners-desc {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+form {
+    max-width: 300px;
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(56, 56, 56);
+    gap: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form select {
+    margin-bottom: 25px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+}
+
+.project-label,
+.budget-label {
+    margin-right: 200px;
+}
+
+.project-label {
+    margin-right: 210px;
+}
+
+.company-label,
+.message-label {
+    margin-right: 250px;
+}
+
+.input-box {
+    display: flex;
+    gap: 10px;
+}
+
+.input-box div {
+    display: block;
+}
+
+.input-box div label {
+    margin-right: 99px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px 0;
+    padding-left: 3px;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+textarea::placeholder {
+    color: white;
+}
+
+form button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+form a {
+    text-decoration: none;
+    color: white;
+}
+
+form a:hover {
+    text-decoration: underline;
+    color: #a1c4fd;
+}
+
+
+.message-using {
+    padding-right: 190px;
+    border: 1px solid rgb(56, 56, 56);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.message-apps {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.message-apps i {
+    margin-top: 20px;
+}
+
+.apps-info {
+    display: block;
+    text-align: start;
+    padding: 3px;
+}
+
+.apps-info h4 {
+    margin: 5px;
+}
+
+.apps-info p,
+.apps-info small {
+    margin: 0;
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.socials {
+    text-align: start;
+    padding: 10px;
+    border: 1px solid rgb(56, 56, 56);
+    border-radius: 5px;
+}
+
+.socials img,
+.other-social img {
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.other-info {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    border-bottom: 1px solid rgb(56, 56, 56);
+    padding-bottom: 30px;
+}
+
+.other-social {
+    align-self: center;
+}
+
+.other-social p {
+    text-align: start;
+    font-size: 13px;
+}
+
+.other-social-img {
+    justify-self: start;
+}
+
+.other-service {
+    text-align: start;
+}
+
+.other-service a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    padding-left: 0;
+    padding-right: 82px;
+    display: block;
+}
+
+.other-service a:hover {
+    color: #a1c4fd;
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+footer p {
+    font-size: 12px;
+    color: rgb(109, 108, 108);
+}
